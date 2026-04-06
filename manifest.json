@@ -1,0 +1,140 @@
+{
+    "name": "Chat PWA de Superhéroes",
+    "short_name": "ChatHero",
+    "description": "Aplicación de chat temática de superhéroes. Chatea como tu personaje favorito de Marvel: Spiderman, Ironman, Wolverine, Thor o Hulk.",
+    "lang": "es",
+    "dir": "ltr",
+    "categories": ["social", "entertainment"],
+    "id": "com.superhero.chatpwa",
+    "start_url": "./index.html?source=pwa",
+    "scope": "./",
+    "display": "standalone",
+    "display_override": ["standalone", "minimal-ui"],
+    "orientation": "portrait",
+    "background_color": "#1a1a2e",
+    "theme_color": "#e94560",
+    "icons": [
+        {
+            "src": "img/icons/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "img/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "img/avatars/spiderman.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "form_factor": "narrow",
+            "label": "Selección de personaje Spiderman"
+        },
+        {
+            "src": "img/avatars/ironman.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "form_factor": "narrow",
+            "label": "Selección de personaje Ironman"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Chat Spiderman",
+            "short_name": "Spiderman",
+            "description": "Ir directamente al chat como Spiderman",
+            "url": "./index.html?user=spiderman",
+            "icons": [
+                {
+                    "src": "img/avatars/spiderman.jpg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Chat Ironman",
+            "short_name": "Ironman",
+            "description": "Ir directamente al chat como Ironman",
+            "url": "./index.html?user=ironman",
+            "icons": [
+                {
+                    "src": "img/avatars/ironman.jpg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Chat Thor",
+            "short_name": "Thor",
+            "description": "Ir directamente al chat como Thor",
+            "url": "./index.html?user=thor",
+            "icons": [
+                {
+                    "src": "img/avatars/thor.jpg",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ],
+    "prefer_related_applications": false,
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=com.superhero.chat",
+            "id": "com.superhero.chat"
+        }
+    ],
+    "share_target": {
+        "action": "./index.html",
+        "method": "GET",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url"
+        }
+    },
+    "protocol_handlers": [
+        {
+            "protocol": "web+chathero",
+            "url": "./index.html?chat=%s"
+        }
+    ],
+    "launch_handler": {
+        "client_mode": ["navigate-existing", "auto"]
+    }
+}
